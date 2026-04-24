@@ -1,0 +1,21 @@
+/* Pomodoro styling - text colors only */
+#custom-pomodoro.inactive {
+    color: #969696;
+}
+
+#custom-pomodoro.pomodoro {
+    color: #ff6b6b;
+}
+
+#custom-pomodoro.short-break {
+    color: #7eca9c;
+}
+
+#custom-pomodoro.long-break {
+    color: #89b4fa;
+}
+
+#custom-pomodoro.paused {
+    color: #f5c2e7;
+    font-style: italic;
+}

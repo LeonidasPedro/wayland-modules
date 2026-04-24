@@ -1,0 +1,25 @@
+# Configuração do nextmeeting para Waybar
+
+# Calendário padrão
+calendar = "Família"
+
+# Largura máxima do título do evento
+max-title-length = 40
+
+# Mostrar hora do evento
+show-time = true
+
+# Formato de saída JSON para Waybar
+waybar = true
+
+# Horário de início (ex: 08:00)
+work-from-hour = 8
+
+# Horário de término (ex: 18:00)
+work-to-hour = 18
+
+# Intervalo de atualização em segundos
+refresh = 60
+
+# Ícone customizado
+icon = "📅"

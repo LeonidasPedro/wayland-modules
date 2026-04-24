@@ -1,0 +1,8 @@
+    "custom/nextmeeting": {
+        "exec": "~/.config/waybar/scripts/nextmeeting.sh",
+        "format": "📅 {}",
+        "interval": 30,
+        "return-type": "json",
+        "on-click": "~/.config/waybar/scripts/calendar_popup.sh",
+        "tooltip": true
+    },

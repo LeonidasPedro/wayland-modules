@@ -1,0 +1,10 @@
+    "custom/pomodoro": {
+        "exec": "pomodoro_timer.py",
+        "return-type": "json",
+        "interval": 1,
+        "format": "{}",
+        "on-click": "pomodoro_timer.py toggle",
+        "on-click-right": "pomodoro_timer.py skip",
+        "on-click-middle": "pomodoro_timer.py reset",
+        "tooltip": true
+    },

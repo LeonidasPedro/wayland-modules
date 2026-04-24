@@ -1,0 +1,8 @@
+    "custom/gtasks": {
+        "exec": "~/.config/waybar/scripts/gtasks_count.sh",
+        "format": "✓ {}",
+        "interval": 60,
+        "return-type": "json",
+        "on-click": "~/.config/waybar/scripts/gtasks_popup.sh",
+        "tooltip": true
+    },
