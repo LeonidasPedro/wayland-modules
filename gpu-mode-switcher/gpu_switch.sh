@@ -17,7 +17,7 @@ case "$mode" in
         label="Nvidia"
         ;;
     hybrid)
-        icon="󰣘"
+        icon="󰾲"
         label="Híbrida"
         ;;
     *)

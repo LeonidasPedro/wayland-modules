@@ -38,9 +38,14 @@ Módulo para alternar entre GPU integrada e Nvidia via envycontrol, com indicado
 
 - **Estado atual:** `envycontrol --query`
 - **Flag de reinício pendente:** `/tmp/gpu_pending_restart` (limpo automaticamente no reboot)
-- **Clique:** alterna entre `integrated` ↔ `nvidia` (`hybrid` vira `nvidia`)
+- **Clique:** alterna entre `integrated` ↔ `hybrid` (`nvidia` vira `integrated` como fallback)
+- **Idempotente:** `flock` em `/tmp/gpu_toggle.lock` previne execuções concorrentes em cliques rápidos
 - **Ícone de atenção** (`󰀦`) aparece após trocar e desaparece sozinho após reinício
 - **Signal 21** — waybar é avisado após a troca para refresh imediato
+
+> **Nota Hyprland:** modo `nvidia` puro tem problemas no Wayland/Hyprland.
+> Toggle ficou em `integrated ↔ hybrid` por estabilidade.
+> HDMI da dGPU funciona em `hybrid` se Hyprland configurar `AQ_DRM_DEVICES` corretamente.
 
 ## Ícones (Nerd Fonts)
 
